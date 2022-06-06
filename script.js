@@ -53,7 +53,7 @@ const hueRotate = document.getElementById('hue-rotate');
 function setValue(e, filter) {
     const img = document.getElementById('img');
     if (filter == 'blur') {
-        img.style.filter = `${filter}(${e}px)`;
+        img.style.filter = `${filter}(${e / 2}px)`;
     }
     if (filter == 'hue-rotate') {
         img.style.filter = `${filter}(${e}deg)`;
@@ -62,27 +62,27 @@ function setValue(e, filter) {
 }
 
 
-grayscale.onchange = function (e) {
+grayscale.oninput = function (e) {
     setValue(e.target.value, 'grayscale');
 }
-saturate.onchange = function (e) {
+saturate.oninput = function (e) {
     setValue(e.target.value, 'saturate');
 }
-sepia.onchange = function (e) {
+sepia.oninput = function (e) {
     setValue(e.target.value, 'sepia');
 }
-invert.onchange = function (e) {
+invert.oninput = function (e) {
     setValue(e.target.value, 'invert');
 }
-contrast.onchange = function (e) {
+contrast.oninput = function (e) {
     setValue(e.target.value, 'contrast');
 }
-brightness.onchange = function (e) {
+brightness.oninput = function (e) {
     setValue(e.target.value, 'brightness');
 }
-blur.onchange = function (e) {
+blur.oninput = function (e) {
     setValue(e.target.value, 'blur');
 }
-hueRotate.onchange = function (e) {
+hueRotate.oninput = function (e) {
     setValue(e.target.value, 'hue-rotate');
 }
