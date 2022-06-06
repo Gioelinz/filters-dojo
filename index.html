@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Filters</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <label class="file-btn" for="my-file"><img id="img"
+                src="https://www.pngall.com/wp-content/uploads/2/Upload-PNG-Image-File.png" alt="upload" width="360"
+                height="220"></label>
+        <input onchange="previewImage()" type="file" name="file" id="my-file">
+        <div class="filters d-none">
+            <ul>
+                <li>
+                    <p class="clickable">Grayscale</p>
+                    <input class="inputs" id="grayscale" type="range">
+                </li>
+                <li>
+                    <p class="clickable">Saturate</p>
+                    <input class="inputs" id="saturate" type="range">
+                </li>
+                <li>
+                    <p class="clickable">Sepia</p>
+                    <input class="inputs" id="sepia" type="range">
+                </li>
+                <li>
+                    <p class="clickable">Invert</p>
+                    <input class="inputs" id="invert" type="range">
+                </li>
+                <li>
+                    <p class="clickable">Contrast</p>
+                    <input class="inputs" id="contrast" type="range">
+                </li>
+                <li>
+                    <p class="clickable">Brightness</p>
+                    <input class="inputs" id="brightness" type="range">
+                </li>
+                <li>
+                    <p class="clickable">Blur</p>
+                    <input class="inputs" id="blur" type="range">
+                </li>
+                <li>
+                    <p class="clickable">Hue Rotate</p>
+                    <input class="inputs" id="hue-rotate" type="range">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
